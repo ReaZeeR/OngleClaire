@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Réservation OngleClaire</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li id="logo"><a href="index.html">OngleClaire</a></li>
+            </ul>
+        </nav>
+            <section>
+                <div id="container">
+                    <h2>Réservation en ligne</h2>
+                    <form action="https://formspree.io/f/mknewevp" method="post" id="my-form">
+
+                        <div id="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom">
+                        </div>
+
+                        <div id="form-group">
+                            <label for="nom">Nom de famille</label>
+                            <input type="text" id="nom" name="nom">
+                        </div>
+
+                        <div id="form-group">
+                            <label for="num">Numéro de téléphone</label>
+                            <input type="text" id="num" name="num">
+                        </div>
+
+                        <div id="form-group">
+                            <label for="dispo">Vos disponibiliter</label>
+                            <textarea name="dispo" id="dispo" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <button type="submit">Réserver</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
+        <script src="./mais.js"></script>
+    </body>
+
+</html>
